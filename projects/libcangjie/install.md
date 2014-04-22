@@ -63,6 +63,15 @@ $ sudo apt-get install libcangjie2
 Note that if you need the development headers, then you should also install
 the `libcangjie2-dev` package.
 
+## NixOS
+
+libcangjie is included in the default NixOS channel, **starting with the
+14.02 release**, so you can install it with `nix-env`:
+
+```
+$ nix-env --install libcangjie
+```
+
 ## Build from the sources
 
 ### Dependencies
@@ -74,7 +83,9 @@ To build this library, you will need the following:
 
 ### Install from a release tarball
 
-_**Note:** There are no release tarballs at this point._
+Download a release tarball from
+[the download section](http://cangjians.github.io/downloads/libcangjie/) of
+our website.
 
 From the root folder of the unpacked tarball, do the usual Autotools dance:
 
