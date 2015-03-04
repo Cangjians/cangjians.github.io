@@ -14,7 +14,7 @@ If it works for you and you like it, please don't hesitate to vote it on
 So you can install it with `yaourt`:
 
 ```
-$ yaourt pycangjie
+$ yaourt python-pycangjie
 ```
 
 ## Debian Unstable / Sid
