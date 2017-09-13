@@ -95,15 +95,7 @@ It is obviously a good idea to try installing the software from this tarball,
 to test that it actually works, especially if you can do so on a clean
 machine.
 
-Once you are happy with it, publish the tarball on the website so that users
-can download it:
-
-1. Place the new tarball in the `downloads/$project/` folder in the
-`cangjians.github.io` source tree,
-2. Run the `update_dirs` script in the `downloads` folder,
-3. Commit and push everything.
-
-Finally, you need to tag the commit from which you made the release. Back in
+Next you need to tag the commit from which you made the release. Back in
 the source tree of the project you are releasing:
 
 ```
@@ -112,3 +104,5 @@ $ git push origin vMAJOR.MINOR
 ```
 
 Of course, replace `vMAJOR.MINOR` by the actual version of this new release.
+
+Finally, publish the tarball on Github, for the corresponding release.
