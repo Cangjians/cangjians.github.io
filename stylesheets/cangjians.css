@@ -82,3 +82,18 @@ img {
 img#cangjie_home {
   box-shadow: 0 0;
 }
+
+#project_title {
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+#page_title {
+  margin-bottom: 1em;
+}
+
+.page-home #page_title {
+  border-bottom: rgba(0, 0, 0, 0.15) 1px solid;
+  margin-bottom: 0.1em;
+  padding-bottom: 0.2em;
+}
