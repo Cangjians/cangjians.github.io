@@ -34,16 +34,6 @@
       </footer>
     </div>
 
-  <script type="application/javascript">
-      /* "Animate" the image on the home page */
-      var home_image = document.getElementById("cangjie_home");
-      home_image.onmouseover = function() {
-        this.src = "/images/cangjie-with-codes.png";
-      }.bind(home_image);
-      home_image.onmouseout = function() {
-        this.src = "/images/cangjie-without-codes.png";
-      }.bind(home_image);
-  </script>
-
+    <script src="{{ site.url }}/javascripts/main.js" type="module"></script>
   </body>
 </html>
