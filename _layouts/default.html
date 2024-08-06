@@ -12,17 +12,32 @@
     <title>{{ page.title }} | {{ site.name }}</title>
   </head>
 
-  <body>
+  <body
+    {% if page.classname %}
+      class="{{ page.classname }}"
+    {% endif %}>
+  >
 
-{% include header.html %}
+    {% include header.html %}
 
     {% if page.project %}
       {% include header_project.html %}
     {% endif %}
 
+    {% if page.dir != "/" %}
+      <div id="breadcrumbs_wrap" class="outer">
+        {% include breadcrumbs.html %}
+      </div>
+    {% endif %}
+
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+
       <section id="main_content" class="inner">
+        {% if page.title %}
+          <h1 id="page_title">{{ page.title }}</h1>
+        {% endif %}
+
         {{ content }}
       </section>
     </div>
