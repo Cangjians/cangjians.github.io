@@ -19,4 +19,4 @@ bundle exec jekyll serve
 
 The server address will be displayed after the service is ready.
 
-Usually the server address will be: http://127.0.0.1:4000
+Usually the server address will be: http://127.0.0.1:4000/
