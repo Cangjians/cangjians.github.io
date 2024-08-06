@@ -1,6 +1,22 @@
 image: ruby:3.2
 
+stages:
+  - test
+  - pages
+
+test:
+  stage: test
+  script:
+    - gem install bundler
+    - bundle install
+    - bundle exec jekyll build -d public
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - public
+
 pages:
+  stage: pages
   script:
     - gem install bundler
     - bundle install
@@ -8,3 +24,5 @@ pages:
   artifacts:
     paths:
       - public
+  only:
+    - main
