@@ -44,14 +44,14 @@ the `libcangjie-devel` package.
 ## Gentoo
 
 Libcangjie is included in the Gentoo repositories. It is currently masked.
-You will need to add "app-i18n/libcangjie" to your /etc/portage/package.accept_keywords 
+You will need to add "app-i18n/libcangjie" to your /etc/portage/package.accept_keywords
 or use autounmask. Once unmasked install as root with :
 
 ```
 $ emerge app-i18n/libcangjie
 ```
 
-## Ubuntu 14.04
+## Ubuntu 14.04 or later
 
 libcangjie is included in the default Ubuntu repositories, **starting with the
 14.04 release**, so you can install it with `apt-get`:
@@ -84,15 +84,24 @@ To build this library, you will need the following:
 ### Install from a release tarball
 
 Download a release tarball from
-[the download section](http://cangjians.github.io/downloads/libcangjie/) of
-our website.
+[the releases section](https://gitlab.freedesktop.org/cangjie/libcangjie/-/releases) on
+Freedesktop.org.
 
-From the root folder of the unpacked tarball, do the usual Autotools dance:
+Installation requires [meson](https://mesonbuild.com/) build system to run.
+After installing meson, from the root folder of the unpacked tarball, run:
 
 ```
-$ ./configure
-$ make
-$ sudo make install
+$ meson setup ./builddir --prefix=/usr --wipe
+$ meson build ./builddir
+$ meson install -C ./builddir
+```
+
+If you have want to test against ibus-cangjie on your system but ibus-cangjie is
+already running before this process, remember to restart ibus daemon to reload
+the newly built and installed version:
+
+```
+$ ibus restart
 ```
 
 ### Install from Git

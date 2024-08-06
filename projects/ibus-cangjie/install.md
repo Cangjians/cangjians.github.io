@@ -39,14 +39,14 @@ $ sudo yum install ibus-cangjie
 ## Gentoo
 
 IBus Cangjie is included in the Gentoo repositories. It is currently masked.
-You will need to add "app-i18n/ibus-cangjie" to your /etc/portage/package.accept_keywords 
+You will need to add "app-i18n/ibus-cangjie" to your /etc/portage/package.accept_keywords
 or use autounmask. Once unmasked install as root with :
 
 ```
 $ emerge app-i18n/ibus-cangjie
 ```
 
-## Ubuntu 14.04
+## Ubuntu 14.04 or later
 
 IBus Cangjie is included in the default Ubuntu repositories, **starting with
 the 14.04 release**, so you can install it with `apt-get`:
@@ -73,15 +73,22 @@ To build IBus Cangjie, you will need the following:
 ### Install from a release tarball
 
 Download a release tarball from
-[the download section](http://cangjians.github.io/downloads/ibus-cangjie/) of
-our website.
+[the releases section](https://gitlab.freedesktop.org/cangjie/ibus-cangjie/-/releases) on.
 
-From the root folder of the unpacked tarball, do the usual Autotools dance:
+Installation requires [meson](https://mesonbuild.com/) build system to run.
+After installing meson, from the root folder of the unpacked tarball, run:
 
 ```
-$ ./configure
-$ make
-$ sudo make install
+$ meson setup ./builddir --prefix=/usr --wipe
+$ meson build ./builddir
+$ meson install -C ./builddir
+```
+
+If you have ibus-cangjie already running before this process, remember to
+restart ibus daemon to reload the newly built and installed version:
+
+```
+$ ibus restart
 ```
 
 ### Install from Git
@@ -89,7 +96,7 @@ $ sudo make install
 First, you need to clone the development repository:
 
 ```
-$ git clone git://github.com/Cangjians/ibus-cangjie
+$ git clone https://gitlab.freedesktop.org/cangjie/ibus-cangjie.git
 ```
 
 Then, from the root folder of the Git clone, do the usual Autotools dance:

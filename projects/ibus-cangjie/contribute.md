@@ -18,8 +18,8 @@ First of all, it is written in Python 3, so if you want to contribute to the
 code, you'll need to know a bit about that.
 
 If you find a bug, please make sure it is not
-[already known](https://github.com/Cangjians/ibus-cangjie/issues), and if not
-please [report it](https://github.com/Cangjians/ibus-cangjie/issues/new).
+[already known](https://gitlab.freedesktop.org/cangjie/ibus-cangjie/-/issues), and if not
+please [report it](https://gitlab.freedesktop.org/cangjie/ibus-cangjie/-/issues/new).
 
 Of course, when looking at the list of open bugs, if you find one you would
 like to fix, just go ahead and send us a pull request.

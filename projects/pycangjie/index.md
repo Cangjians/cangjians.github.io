@@ -22,13 +22,12 @@ for c in cj.get_characters("a*y"):
 ```
 
 For more details, refer to the documentation, either
-[online](http://cangjians.github.io/projects/pycangjie/documentation)
+[online]({{ site.url }}/projects/pycangjie/documentation)
 or the one shipped with this software.
 
-Development happens [on github](https://github.com/Cangjians/pycangjie), and
+Development happens [on Freedesktop.org](https://gitlab.freedesktop.org/cangjie/pycangjie), and
 stable release tarballs can be found in
-[the download section](http://cangjians.github.io/downloads/pycangjie/) of
-our website.
+[the releases section](https://gitlab.freedesktop.org/cangjie/pycangjie/-/releases) there.
 
 ## Legalities
 

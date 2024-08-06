@@ -1,4 +1,22 @@
 (function () {
+    // Check if the domain is within accepted domain names.
+    // If not, redirect to the correct domain with the current path.
+    const acceptedDomains = [
+        'cangjie.pages.freedesktop.org',
+        'localhost', // For local development
+    ];
+
+    const currentDomain = window.location.hostname;
+    if (acceptedDomains.includes(currentDomain)) {
+        return;
+    }
+
+    const currentPath = window.location.pathname;
+    const newUrl = `https://${acceptedDomains[0]}${currentPath}`;
+    window.location.replace(newUrl);
+})();
+
+(function () {
     // "Animate" the image on the home page
     const home_image = document.getElementById("cangjie_home");
     if (!home_image) {

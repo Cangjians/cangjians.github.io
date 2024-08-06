@@ -1,3 +1,16 @@
+:root {
+  --freedesktop-org-theme-color-rgb: 59, 128, 174;
+}
+#forkme_banner {
+  background-color: rgba(var(--freedesktop-org-theme-color-rgb), 0.6);
+  background-image: url('../images/freedesktop-org-icon.svg');
+  background-size: 30px auto;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+#forkme_banner:hover {
+  background-color: rgba(var(--freedesktop-org-theme-color-rgb), 1);
+}
 header.inner {
   padding-bottom: 0px !important;
 }
