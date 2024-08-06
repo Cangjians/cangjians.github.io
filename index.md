@@ -6,7 +6,7 @@ name: home
 
 ## Welcome to Cangjia
 
-<img src="/images/cangjie-without-codes.png"
+<img src="{{ site.url }}/images/cangjie-without-codes.png"
      alt="Cangjiception - CC-By-SA - Jacqueline Wong and Mathieu Bridon"
      title="Cangjiception - CC-By-SA - Jacqueline Wong and Mathieu Bridon"
      id="cangjie_home" />
