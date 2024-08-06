@@ -1,3 +1,11 @@
-pygments: true
+highlighter: pygments
 markdown: redcarpet
 url: https://cangjie.pages.freedesktop.org
+git_urls:
+  libcangjie: https://gitlab.freedesktop.org/cangjie/libcangjie.git
+  pycangjie: https://gitlab.freedesktop.org/cangjie/pycangjie.git
+  ibus-cangjie: https://gitlab.freedesktop.org/cangjie/ibus-cangjie.git
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
