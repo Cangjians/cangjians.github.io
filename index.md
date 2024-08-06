@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Cangjians
+title: Project Cangjie
 name: home
 ---
 
-## Welcome to Cangjia
+## Welcome to Project Cangjie
 
 <img src="{{ site.url }}/images/cangjie-without-codes.png"
      alt="Cangjiception - CC-By-SA - Jacqueline Wong and Mathieu Bridon"
