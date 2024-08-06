@@ -7,8 +7,8 @@ name: home
 ## Welcome to Project Cangjie
 
 <img src="{{ site.url }}/images/cangjie-without-codes.png"
-     alt="Cangjiception - CC-By-SA - Jacqueline Wong and Mathieu Bridon"
-     title="Cangjiception - CC-By-SA - Jacqueline Wong and Mathieu Bridon"
+     alt="Project Cangjie - CC-By-SA - Jacqueline Wong and Mathieu Bridon"
+     title="Project Cangjie - CC-By-SA - Jacqueline Wong and Mathieu Bridon"
      id="cangjie_home" />
 
 This is the home the Cangjians, a team of [people](people.html) passionate
