@@ -2,17 +2,21 @@
     // "Animate" the image on the home page
     const home_image = document.getElementById("cangjie_home");
     if (!home_image) {
+        console.log('image not found');
         return;
     }
 
-    // Preload "cangjie-with-codes.png", presuming the default image is "cangjie-without-codes.png"
+    const originalSrc = home_image.src;
+    const hoverSrc = originalSrc.replace("cangjie-without-codes.png", "cangjie-with-codes.png");
     const image = new Image();
-    image.src = home_image.replace("cangjie-without-codes.png", "cangjie-with-codes.png");
-
+    image.src = hoverSrc; // preload iamge
+    image.onload = function() {
+        console.debug('hover image loaded');
+    };
     home_image.addEventListener("mouseover", function(event) {
-        event.target.src.replace("cangjie-without-codes.png", "cangjie-with-codes.png");
+        event.target.src = hoverSrc;
     });
     home_image.addEventListener("mouseout", function(event) {
-        event.target.src.replace("cangjie-with-codes.png", "cangjie-without-codes.png");
+        event.target.src = originalSrc;
     });
 })();
