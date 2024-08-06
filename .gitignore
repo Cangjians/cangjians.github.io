@@ -4,8 +4,5 @@
 # Configured Jekyll build target folder
 /public
 
-# Gem lockfile
-/Gemfile.lock
-
 # Vim temporary file
 *.swp
