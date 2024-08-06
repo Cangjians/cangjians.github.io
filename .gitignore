@@ -1,2 +1,11 @@
-_site
+# Default Jekyll build target folder
+/_site
+
+# Configured Jekyll build target folder
+/public
+
+# Gem lockfile
+/Gemfile.lock
+
+# Vim temporary file
 *.swp
