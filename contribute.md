@@ -14,7 +14,7 @@ If you are interested, this page should give you all the necessary
 informations to join the team, and help us make the best possible input
 experience for Cangjie and Quick users.
 
-Development happens [on Github](https://github.com/Cangjians/), where you can
+Development happens [on Freedesktop.org](https://gitlab.freedesktop.org/cangjie), where you can
 find the source code for [our projects](/projects/), view the open issues and
 report new ones.
 
@@ -54,18 +54,18 @@ to read Peter Hutterer’s great post about
 
 This website is also Free as in Freedom, just like [our software](/projects/).
 Unless specified otherwise, consider that all the web pages and assets under
-the `cangjians.github.io` domain are under the
+the `cangjie.pages.freedesktop.org` domain are under the
 [Creative Commons Attribution Share Alike](http://creativecommons.org/licenses/by-sa/3.0/)
 license.
 
 As everything else, it is hosted
-[on Github](https://github.com/Cangjians/cangjians.github.io).
+[on Freedesktop.org](https://gitlab.freedesktop.org/cangjie/cangjie.pages.freedesktop.org).
 
 If you find any problem with it,
-[report the issue](https://github.com/Cangjians/cangjians.github.io/issues/new),
+[report the issue](https://gitlab.freedesktop.org/cangjie/cangjie.pages.freedesktop.org/-/issues/new),
 or better: open a pull request!
 
-### Make a new release
+### Make a new release (Outdated)
 
 *Note: This is intended to the members of the team, although it can be of
 interest to developers in general.*
