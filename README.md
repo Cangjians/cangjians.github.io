@@ -8,6 +8,8 @@ This is the repository to build the website for the Cangjian project
 To develop the site locally, you need to install:
 
 * Ruby v3.0.0 or later
+* The development headers of Ruby (e.g. "ruby-devel" or "ruby-dev" package in
+  your distro).
 * Rubygems
 
 To run the site locally:
