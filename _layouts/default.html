@@ -25,7 +25,7 @@
       {% include header_project.html %}
     {% endif %}
 
-    {% if page.dir != "/" %}
+    {% if page.dir != "/" or page.name != "index.md" %}
       <div id="breadcrumbs_wrap" class="outer">
         {% include breadcrumbs.html %}
       </div>
