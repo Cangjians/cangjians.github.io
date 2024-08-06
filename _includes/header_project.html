@@ -4,13 +4,13 @@
 
           <nav id="project_nav">
             <a class="{% if page.sub == 'home' %}active{% endif %}"
-               href="/projects/{{ page.project }}/">{% if page.pretty_project %}{{ page.pretty_project }}{% else %}{{ page.project }}{% endif %}</a>
+               href="{{ site.url }}/projects/{{ page.project }}/">{% if page.pretty_project %}{{ page.pretty_project }}{% else %}{{ page.project }}{% endif %}</a>
             <a class="{% if page.sub == 'doc' %}active{% endif %}"
-               href="/projects/{{ page.project }}/documentation">Documentation</a>
+               href="{{ site.url }}/projects/{{ page.project }}/documentation">Documentation</a>
             <a class="{% if page.sub == 'install' %}active{% endif %}"
-               href="/projects/{{ page.project }}/install.html">Install</a>
+               href="{{ site.url }}/projects/{{ page.project }}/install.html">Install</a>
             <a class="{% if page.sub == 'contribute' %}active{% endif %}"
-               href="/projects/{{ page.project }}/contribute.html">Contribute</a>
+               href="{{ site.url }}/projects/{{ page.project }}/contribute.html">Contribute</a>
           </nav>
 
         </div>
