@@ -1,4 +1,4 @@
-pygments: true
+highlighter: pygments
 markdown: redcarpet
 url: https://cangjie.pages.freedesktop.org
 git_urls:
