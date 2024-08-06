@@ -5,7 +5,8 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="{{ site.description }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#373737" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/stylesheets/cangjians.css">
@@ -13,11 +14,7 @@
     <title>{{ page.title }} | {{ site.name }}</title>
   </head>
 
-  <body
-    {% if page.classname %}
-      class="{{ page.classname }}"
-    {% endif %}>
-  >
+  <body {% if page.classname %} class="{{ page.classname }}" {% endif %}>
 
     {% include header.html %}
 
