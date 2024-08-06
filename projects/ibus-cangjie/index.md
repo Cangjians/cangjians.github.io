@@ -15,12 +15,11 @@ Chinese, as they are (by far) the majority of Cangjie and Quick users.
 However, it should work for others as well (e.g to input Simplified Chinese).
 
 Note that the actual input logic is handled by
-[libcangjie](https://github.com/Cangjians/libcangjie).
+[libcangjie](https://gitlab.freedesktop.org/cangjie/libcangjie).
 
-Development happens [on github](https://github.com/Cangjians/ibus-cangjie),
+Development happens [on freedesktop.org](https://gitlab.freedesktop.org/cangjie/ibus-cangjie),
 table release tarballs can be found in
-[the download section](http://cangjians.github.io/downloads/ibus-cangjie/) of
-our website.
+[the releases section](https://gitlab.freedesktop.org/cangjie/ibus-cangjie/-/releases/) there.
 
 
 ## Legalities

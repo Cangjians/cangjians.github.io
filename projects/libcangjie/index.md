@@ -47,13 +47,12 @@ int main() {
 ```
 
 For more details, refer to the documentation, either
-[online](http://cangjians.github.io/projects/libcangjie/documentation)
+[online]({{ site.url }}/projects/libcangjie/documentation)
 or the one shipped with this software.
 
 Development happens [at Freedesktop.org](https://gitlab.freedesktop.org/cangjie/libcangjie),
 and stable release tarballs can be found in
-[the download section](http://cangjians.github.io/downloads/libcangjie/) of
-our website.
+[the releases section](https://gitlab.freedesktop.org/cangjie/libcangjie/-/releases) there.
 
 ## History
 
