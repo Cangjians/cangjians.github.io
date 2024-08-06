@@ -24,12 +24,14 @@
       {% include header_project.html %}
     {% endif %}
 
+    {% if page.dir != "/" %}
+      <div id="breadcrumbs_wrap" class="outer">
+        {% include breadcrumbs.html %}
+      </div>
+    {% endif %}
+
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-
-      {% if page.dir != "/" %}
-        {% include breadcrumbs.html %}
-      {% endif %}
 
       <section id="main_content" class="inner">
         {% if page.title %}

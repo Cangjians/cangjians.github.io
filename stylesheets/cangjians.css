@@ -88,6 +88,10 @@ img#cangjie_home {
   letter-spacing: -1px;
 }
 
+#breadcrumbs_wrap {
+  background-color: rgba(220, 220, 220, 1);
+}
+
 #page_title {
   margin-bottom: 1em;
 }
