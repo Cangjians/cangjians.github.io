@@ -57,18 +57,29 @@ $ sudo apt-get install ibus-cangjie
 
 ## Build from the sources
 
-### Dependencies
+### Prerequisites
 
-To build IBus Cangjie, you will need the following:
+To build and run the latest development version of IBus Cangjie, you will need
+to install the following:
 
-* Python >= 3.2
-* the Python 3 GObject bindings
-* IBus >= 1.5 (note that its GObject-Introspection bindings must be enabled)
-* pycangjie
-* pycanberra: this is **optional**, only needed to play event sounds,
-  especially to give feedback to the user on incorrect inputs. IBus Cangjie
-  will fail gracefully if pycanberra is not available though, and just won't
-  play any sound.
+* [Python][python] >= 3.10
+* [IBus][ibus] >= 1.5 (with GObject introspection bindings v1.0)
+* [GLib][glib] (with GObject introspection bindings v2.0)
+* [Gtk][gtk] (with GObject introspection bindings v4.0)
+* [Gdk][gdk] (with GObject introspection bindings v4.0)
+* [pycangjie][pycangjie]
+* [libcangjie][libcangjie]
+
+Some Linux distributions already provide packages of them. Please consult your
+Linux distribution for relevant instructions.
+
+[python]: https://www.python.org/
+[ibus]: https://github.com/ibus/ibus/wiki/ReadMe
+[glib]: https://gitlab.gnome.org/GNOME/glib
+[gtk]: https://www.gtk.org/
+[gdk]: https://docs.gtk.org/gdk3/
+[pycangjie]: https://cangjie.pages.freedesktop.org/projects/pycangjie/
+[libcangjie]: https://cangjie.pages.freedesktop.org/projects/libcangjie/
 
 ### G​et the Source Code
 
