@@ -46,9 +46,9 @@ or use autounmask. Once unmasked install as root with :
 $ emerge app-i18n/ibus-cangjie
 ```
 
-## Ubuntu 14.04 or later
+## Ubuntu
 
-IBus Cangjie is included in the default Ubuntu repositories, **starting with
+IBus Cangjie is included in the default Ubuntu repositories, **since
 the 14.04 release**, so you can install it with `apt-get`:
 
 ```
@@ -63,20 +63,30 @@ To build IBus Cangjie, you will need the following:
 
 * Python >= 3.2
 * the Python 3 GObject bindings
-* IBus >= 1.4.1 (note that its GObject-Introspection bindings must be enabled)
+* IBus >= 1.5 (note that its GObject-Introspection bindings must be enabled)
 * pycangjie
 * pycanberra: this is **optional**, only needed to play event sounds,
   especially to give feedback to the user on incorrect inputs. IBus Cangjie
   will fail gracefully if pycanberra is not available though, and just won't
   play any sound.
 
-### Install from a release tarball
+### G​et the Source Code
 
-Download a release tarball from
-[the releases section](https://gitlab.freedesktop.org/cangjie/ibus-cangjie/-/releases) on.
+For stable releases, you may download the release tarball from
+[the releases section][releases] of our repository page.
 
-Installation requires [meson](https://mesonbuild.com/) build system to run.
-After installing meson, from the root folder of the unpacked tarball, run:
+Alternatively, you may get the latest development version (or or any release
+version) with [git][git] with this command:
+
+```
+$ git clone https://gitlab.freedesktop.org/cangjie/ibus-cangjie.git
+```
+
+### Compile and Install
+
+L​atest developement version of ibus-cangjie requires the [meson][meson]
+build system to compile. After installing meson, from the root folder of the
+source code, run:
 
 ```
 $ meson setup ./builddir --prefix=/usr --wipe
@@ -91,13 +101,9 @@ restart ibus daemon to reload the newly built and installed version:
 $ ibus restart
 ```
 
-### Install from Git
+#### For Older Versions
 
-First, you need to clone the development repository:
-
-```
-$ git clone https://gitlab.freedesktop.org/cangjie/ibus-cangjie.git
-```
+Previous releases (2.4 or earlier) is built with [GNU Automake][automake].
 
 Then, from the root folder of the Git clone, do the usual Autotools dance:
 
@@ -106,3 +112,8 @@ $ ./autogen.sh
 $ make
 $ sudo make install
 ```
+
+[releases]: https://gitlab.freedesktop.org/cangjie/ibus-cangjie/-/releases
+[meson]: https://mesonbuild.com/
+[git]: https://git-scm.com/
+[automake]: https://www.gnu.org/software/automake/manual/html_node/index.html
