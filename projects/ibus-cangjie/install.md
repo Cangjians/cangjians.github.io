@@ -33,7 +33,7 @@ IBus Cangjie is included in the default Fedora repositories, so you can just
 install it with `yum`:
 
 ```
-$ sudo yum install ibus-cangjie
+$ sudo dnf install ibus-cangjie
 ```
 
 ## Gentoo
