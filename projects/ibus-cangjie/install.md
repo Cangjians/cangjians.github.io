@@ -34,11 +34,11 @@ install it with your favorite software installer, e.g GNOME Software.
 
 If you want the Cangjie input methog:
 
-![IBus Cangjie in GNOME Software](/images/software-cangjie.png")
+![IBus Cangjie (Cangjie) in GNOME Software](/images/software-cangjie.png "Cangjie in GNOME Software")
 
 If you prefer the simpler Quick (or "Simplified Cangjie") input method:
 
-![IBus Cangjie in GNOME Software](/images/software-quick.png")
+![IBus Cangjie (Quick) in GNOME Software](/images/software-quick.png Quick in GNOME Software")
 
 
 If you are a CLI fan, install with `dnf`:
