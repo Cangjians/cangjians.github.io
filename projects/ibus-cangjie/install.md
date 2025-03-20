@@ -30,7 +30,7 @@ install it with `apt-get`, as the root user:
 ## Fedora
 
 IBus Cangjie is included in the default Fedora repositories, so you can just
-install it with your favorite software installer, e.g GNOME Software.
+install it with your favorite software installer, for example GNOME Software.
 
 If you want the Cangjie input method:
 
