@@ -52,7 +52,7 @@ $ sudo dnf install ibus-cangjie-engine-cangjie
 * for Quick:
 
 ```
-sudo dnf install ibus-cangie-engine-quick
+$ sudo dnf install ibus-cangie-engine-quick
 ```
 
 ## Gentoo
