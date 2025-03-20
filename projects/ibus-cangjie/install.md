@@ -38,7 +38,7 @@ If you want the Cangjie input methog:
 
 If you prefer the simpler Quick (or "Simplified Cangjie") input method:
 
-![IBus Cangjie (Quick) in GNOME Software](/images/software-quick.png Quick in GNOME Software")
+![IBus Cangjie (Quick) in GNOME Software](/images/software-quick.png "Quick in GNOME Software")
 
 
 If you are a CLI fan, install with `dnf`:
